@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); 
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #eae3e3;
+	display: flex; 
+	align-items: center;
+	flex-direction: column;
+}
+
+h1 {
+	font-size: 20px;
+}
+
+textarea {
+	margin-top: 5px;
+    padding: 10px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+.container {
+	margin-top: 25px;
+	width: 50%;
+	background-color: rgba(244,244,244,1);
+	box-shadow: 5px 5px #888888;
+	border-radius: 10px;
+	display: flex; 
+	align-items: center;
+	flex-direction: column;	
+}
+
+.controls {
+	font-size: 15px; 
+	
+}
+
+.input-general {
+	padding: 2px;
+}
+
+.input-user {
+	margin-left: 5px;
+	width: 20px;
+	padding: 1px;
+	text-align: center;
+}
+
+.btn {
+	margin-top: 15px;
+	margin-bottom: 10px;
+	background-color: #598E0D;
+	border: 0px;
+	padding: 10px;
+	text-align: center;
+	font-size: 15px;
+}
+
+.btn:hover {
+	background-color: #95DF2D;
+}
+
+.btn:active{
+  box-shadow: 3px 5px #666;
+  transform: translateY(4px);	
+}
+
+.footer {
+	margin-top: 20px;
+	font-size: 10px;
+}
+
+#show-css {
+	display: none;
+	margin-top: 5px;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+#box-model {
+	background: #73AD21;
+	width: 200px;
+	height: 150px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 1px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 9px;
+}
+
