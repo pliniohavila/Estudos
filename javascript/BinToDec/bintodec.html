@@ -1,0 +1,61 @@
+<head>
+<meta charset="utf-8">
+<title>Bin to Dec</title>
+  <link rel="stylesheet" href="styles.css">
+<!--<script src="testnumber.js"></script> -->
+<script type="text/javascript">
+function bintodec(){
+	var input_user = document.getElementById("dt_inp").value;
+	var numbers = /^[0-9]+$/;
+	if(input_user.match(numbers))
+    {
+	console.log("[+] Number has entered")  
+	}
+    else
+    {
+      alert('Please input numeric characters only');
+	}
+	
+	var reverse_input = input_user + "";                            // Convert String to INT
+	reverse_input = reverse_input.split("").reverse().join("");     // Make a reverse String
+	//window.alert(reverse_input);	   // #DEBUG
+	//window.alert(typeof reverse_input);
+	var inp_ary = (""+reverse_input).split("");                     // Convert String has reversed in array 
+	for (var i = 0; i < inp_ary.length; i++) {                      // Convert Array's String elements to INT
+		inp_ary[i] =  parseInt(inp_ary[i]); 
+	}
+	console.log("[+] "+inp_ary);
+	
+	/*
+	Binary to Decimal 	
+	*/
+	var base = 0;
+	for (var i = 0; i < inp_ary.length; i++) 
+	{
+	dec = inp_ary[i] * Math.pow(2, i); 
+	base = base + dec; 
+	}
+	console.log(base);	
+	document.getElementById("decimal").innerHTML = base;
+}
+</script>
+</head>
+
+<body>
+
+<div class="page">
+
+<h1>Binary to Decimal Converter</h1>
+
+<h3>Enter a binary number:</h3>
+<input type="text" id="dt_inp" name="inp-data" /> 
+</br>
+<button type="button" class="btn" onclick="bintodec()"> Convert </button>
+
+<h3>Decimal number:</h3>
+<p id="decimal"> </p>
+
+<p class="author" >2020 - Plínio Hávila </p>
+
+</div>
+</body>
