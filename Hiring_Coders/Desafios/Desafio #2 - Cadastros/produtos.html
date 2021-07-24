@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 02 - Cadastros</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastros de Produtos</h1>
+        <i><img src="./assets/cadastro.png" /></i>
+    </header>
+    <main>
+        <div id="container">
+            <div id="cadastro">
+                <form action="" onsubmit="return false">
+                    <label for="description">Descrição:</label>
+                    <input type="text" name="description" id="description">
+                    <label for="amount">Quantidade:</label>
+                    <input type="number" name="amount" id="amount">
+                    <label for="price">Preço:</label>
+                    <input type="number" name="price" id="price">
+
+                    <button onclick="addProduct()">Cadastrar</button>
+                </form>
+            </div>
+
+            <table id="data-product">
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+            <div class="btn">
+                <a href="./index.html">Voltar </a>
+            </div>
+        </div>
+        
+
+    </main>
+    <footer>
+        Made with 💜 by Plínio Code
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

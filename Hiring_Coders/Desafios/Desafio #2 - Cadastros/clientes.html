@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 02 - Cadastros</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastros de Clientes</h1>
+        <i><img src="./assets/cadastro.png" /></i>
+    </header>
+    <main>
+        <div id="container">
+            <div id="cadastro">
+                <form action="" onsubmit="return false">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="name" id="name">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" name="cpf" id="cpf">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email">
+
+                    <button onclick="addClient()">Cadastrar</button>
+                </form>
+            </div>
+
+            <table id="data-client">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>E-mail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>Olavio</td>
+                        <td>111.222.333-45</td>
+                        <td>olavio@roma.com</td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <div class="btn">
+                <a href="./index.html">Voltar </a>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        Made with 💜 by Plínio Code
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

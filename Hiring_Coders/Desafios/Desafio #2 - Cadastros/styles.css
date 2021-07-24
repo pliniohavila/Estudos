@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    background-color: #CADBC8;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: #9585bf;
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header img {
+    width: 4rem;
+    height: 3rem;
+    margin-left: 1rem;
+}
+
+#container {
+    background-color: #68b7ec;
+    display: flex;
+	align-items: center;
+    flex-direction: column;
+    margin: auto;
+
+    width: 50vw;
+    height: auto;
+    padding: 0 2.5rem 2.5rem 2.5rem;
+}
+
+.opcoes {
+    display: flex;
+    margin: auto;
+}
+
+.btn {
+    background-color: #9585bf;
+    text-align: center;
+
+    margin: 1.5rem;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.btn:hover {
+    background-color: #8067c1;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#cadastro {
+    margin-top: 2.5rem;
+}
+
+label {
+    color: whitesmoke;
+    font-size: 1.2em;
+}
+
+input {
+    background-color: transparent;
+    width: 100%;
+    padding: .3rem 0 .2rem .8rem;
+    border: none;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+
+    font-size: 1.2em;
+    color: black;
+
+    outline: none; 
+}
+
+form button {
+    background-color: #9585bf;
+    color: whitesmoke;
+    text-align: center;
+
+    margin: .8rem;
+    padding: .6rem;
+    border: none;
+}
+
+button:hover {
+    background-color: #8067c1;
+    color: black;
+    opacity: 75%;
+}
+
+table {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+
+th {
+    background-color: #2696e0;
+    padding: .5rem 1rem;
+    text-align: left;
+    opacity: 75%;
+}
+
+td {
+    background-color: #42aff8;
+    padding: .5rem 1rem;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+}
