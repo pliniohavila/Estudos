@@ -1,0 +1,17 @@
+sort1 uses: bubble sort
+
+How do you know?: The bubble sort algorithm works by running through the array several times, and 
+comparing two elements each time. When the larger element is found relative to the next, it switches 
+places.
+
+sort2 uses: merge sort
+
+How do you know?: The merge sort algorithm uses a strategy called divide and conquer.
+How so? Recursively it divides the problem into smaller problems until the smallest possibility,
+which is when it solves each one. Once this is done, it adds the solved problems together until
+the initial problem is solved.
+
+sort3 uses: selection sort
+
+How do you know?: The selection sort algorithm works by running through the array several times comparing
+each element, and when it finds one that is out of place, it changes it.

@@ -1,0 +1,22 @@
+SORT1
+random5000
+real    0m0.111s
+user    0m0.050s
+sys     0m0.008s
+
+random10000
+real    0m0.487s
+user    0m0.225s
+sys     0m0.024s
+
+SORT2
+random5000
+real    0m0.017s
+user    0m0.000s
+sys     0m0.010s
+
+SORT3
+random5000
+real    0m0.041s
+user    0m0.028s
+sys     0m0.004s
