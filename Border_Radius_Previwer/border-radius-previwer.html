@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>CSS Border Radius Previewer</title>
+	<link rel="stylesheet" href="styles.css">
+
+<script type="text/javascript">
+
+function ChangeCss(){
+
+	var box_mdl = document.getElementById("box-model");
+
+	var key = (window.event)?event.keyCode:e.which;
+    if (key == 13)
+    {
+		var border_tl = document.getElementById("input_tl").value;
+		box_mdl.style.borderTopLeftRadius = border_tl+"px";
+		
+		var border_tr = document.getElementById("input_tr").value;
+		box_mdl.style.borderTopRightRadius = border_tr+"px";
+		
+		var border_br = document.getElementById("input_br").value;
+		box_mdl.style.borderBottomRightRadius = border_br+"px";
+		 
+		var border_bl = document.getElementById("input_bl").value;
+		box_mdl.style.borderBottomLeftRadius = border_bl+"px";
+	
+    }
+}
+
+function ShowCssCode(){
+		var s_border_tl = document.getElementById("input_tl").value;
+		var s_border_tl = document.getElementById("input_tl").value;
+		var s_border_tr = document.getElementById("input_tr").value;
+		var s_border_br = document.getElementById("input_br").value;
+		var s_border_bl = document.getElementById("input_bl").value;
+		
+		var text = document.getElementById("showcode");
+var content = "border-top-left-radius: "+s_border_tl+"px\nborder-top-right-radius: "+s_border_tr+"px\nborder-bottom-right-radius: "+s_border_br+"px\nborder-bottom-left-radius: "+s_border_bl+"px";
+	
+		text.value = content;
+		document.getElementById("show-css").style.display = "flex";
+}
+</script>	
+
+</head>
+<body>
+<div class="container">
+	<h1> Border Radius Generator/Previewer</h1>
+	
+	<div id="box-css">
+		<div id="box-model"></div>
+	</div>
+	
+	<div class="controls">
+	<p> Enter a border's pixes size </p>
+	<div class="input-general"> 
+		Border top left radius: 
+		<input type="text" id="input_tl" class="input-user" value="0" onkeypress="ChangeCss(event)"> 
+	</div>
+	<div class="input-general"> 
+		Border top right radius:
+		<input type="text" id="input_tr" class="input-user" value="0" onkeypress="ChangeCss(event)">
+	</div>
+	<div class="input-general"> 
+		Border bottom right radius:
+		<input type="text" id="input_br" class="input-user" value="0" onkeypress="ChangeCss(event)">
+	</div>
+	<div class="input-general"> 
+		Border bottom left radius:
+		<input type="text" id="input_bl" class="input-user" value="0" onkeypress="ChangeCss(event)">
+	</div>
+	</div>
+
+	<button type="button" class="btn" onclick="ShowCssCode()"> Show CSS Code </button>
+	
+	<div id="show-css">
+	<textarea id="showcode" rows="4" cols="33"> </textarea>
+
+	</div>
+
+<p class="footer">Made with 💜 by Plínio Hávila</p>
+</div>
+
+
+</body>
+
+
+

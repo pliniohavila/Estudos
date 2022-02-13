@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --black:  hsl(0, 0%, 0%);
+    --dark-gray: hsl(0, 0%, 55%);
+    --very-dark-gray: hsl(0, 0%, 41%);
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Alata', sans-serif;
+}
+
+
+header {
+    background-image: url("./images/desktop/image-hero.jpg");
+    padding-left: 15rem;
+    padding-right: 10rem;
+    padding-top: 3.5rem;
+
+    height: 100vh;
+    object-fit: contain;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-menu nav ul {
+    display: flex;
+}
+
+.header-menu nav ul li {
+    list-style: none;  
+}
+
+.header-menu nav ul li a {
+    color: var(--white);
+    margin-left: 2rem; 
+    text-decoration: none;
+}
+
+nav a:hover {
+    border-bottom: white 2px solid;
+}
+
+#header-title {
+    border: .1rem var(--white) solid;
+    max-width: 50%;
+    width: auto;
+
+    margin-top: 10rem;
+
+    padding: 1.2rem;
+}
+
+#header-title > h1 {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3.6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#container {
+    padding-top: 5rem;
+    padding-left: 15rem;
+    padding-right: 10rem;
+}
+
+#section-one {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-interactive {
+    width: 60%;
+}
+
+.copy-interactive {
+    padding: 3rem 0 1rem 2.5rem;
+    background-color: var(--white);
+    
+    width: 100%;
+    margin-top: 10rem;
+}
+
+.copy-interactive > h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.copy-interactive > p {
+    margin-top: 1rem;
+    color: var(--very-dark-gray);
+}
+
+#section-two {
+    margin-top: 3rem;
+}
+
+
+#section-two-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#section-two-header > h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+#see-all {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+
+    border: 1px black solid;
+
+    padding: .8rem;
+}
+
+#see-all:hover {
+    background-color: black;
+    color: white;
+}
+
+.creations-grid { 
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    grid-gap: 1rem; 
+}
+
+.creations > img {
+    max-width: 100%;
+}
+
+.text-legend {
+    color: var(--white);
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 300;
+
+    position: relative;
+    top: -7rem;
+    padding-left: 2rem;
+}
+
+.creations > img:hover {
+    background-color: var(--very-dark-gray);
+    opacity: 60%;
+    color:var(--black);
+}
+
+.creations > img:hover + .text-legend  {
+    color:var(--black);
+}
+
+footer {
+    padding: 2.5rem 10rem 1.5rem 15rem;
+    background-color: var(--black);
+    color:var(--white);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav ul {
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+footer nav ul li {
+    list-style: none;
+    
+}
+
+footer nav ul li a {
+    color: var(--white);
+    margin-right: 2rem; 
+    text-decoration: none;
+}
+
+nav a:hover {
+    border-bottom: white 2px solid;
+}
+
+.redes-sociais {
+    justify-content: right;
+}
+
+.redes-sociais > img {
+    margin-right: 2rem; 
+    padding-bottom: .5rem;
+}
+
+.redes-sociais > img:hover {
+    border-bottom: white 2px solid;
+}
+
+.copyright {
+    margin-top: .5rem;
+    color: var(--dark-gray);
+}
+
+
+/*  media queries */
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 1rem;
+    }
+
+    header {
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    
+    .header-menu > nav {
+        display: none;
+    }
+
+    .one, 
+    .two,
+    .three {
+        background-color: var(--white);
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        border-radius: 15px;
+    }
+
+    .menu-toggle {
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+    }
+
+    /* fullscreen */
+    .header-menu.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100vw;
+        height: 100vh;
+
+        /* display: block; */
+        padding: 2rem 0 0 1.5rem;
+        background-color: black;
+        color: white;
+
+        z-index: 10;
+    }
+
+    .header-menu.on > img {
+        /* margin-bottom: 10rem; */
+        max-width: 30vw;
+        max-height: 10vh;
+        height: 100%;
+    }
+
+    .header-menu.on nav {
+        display: block;
+    }
+    /* Rest of site */
+
+    #container {
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    #section-one {
+        flex-direction: column;
+    }
+
+    .copy-interactive {
+        padding: .3rem 0 0rem 1.5rem;
+        background-color: var(--white);
+        width: 100%;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    #section-two-header {
+        text-align: center;
+    }
+
+    .creations-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer {
+        padding: 1.5rem 1rem 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+   #footer-one {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer nav ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+
+    footer nav ul li {
+        margin: .5rem;
+    }
+
+    #footer-two {
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+}
