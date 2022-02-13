@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+
+/* Basics Configurations =========*/
+:root {
+    /*Primary colors*/
+    --vdm-color: hsl(300, 43%, 22%);
+    --sp-color: hsl(333, 80%, 67%);
+
+    /*Neutral colors*/
+    --dgm-color: hsl(303, 10%, 53%);
+    --lgm-color: hsl(300, 24%, 96%);
+    --white-color: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    background-image: url("./images/bg-pattern-top-desktop.svg");
+    background-repeat: no-repeat;
+}
+
+
+
+/* MAIN CONTAINER =========*/
+ #container {
+    position: relative;
+    top: 4rem;
+    margin: 7rem;
+ }
+
+
+ /* BOX 1 ===== */
+#box-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.card-copy {
+    max-width: 50%;
+    width: 100%;
+    padding-right: 6rem;
+}
+
+.card-copy h1 {
+    color: var(--vdm-color);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.card-copy p {
+    margin-top: 1rem;
+    color: var(--dgm-color);
+}
+
+.card-rateds {
+    max-width: 50%;
+    width: 100%;
+}
+
+.rateds {
+    width: 80%;
+
+    background-color: var(--lgm-color);
+    border-radius: 5px;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.rateds span {
+    margin-left: 1rem;
+}
+
+/* #rtd-1 {
+
+}   */
+
+#rtd-2 {
+    margin-top: 1rem;
+    margin-left: 2rem;
+} 
+
+#rtd-3 {
+    margin-top: 1rem;
+    margin-left: 4rem;
+} 
+
+ /* BOX 2 ===== */
+
+ #box-2 {
+     margin-top: 5rem;
+     display: flex;
+     flex-direction: row;
+ }
+
+.card-comments {
+    background-color: var(--vdm-color);
+    color: var(--white-color);
+    border-radius: 5px;
+
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+#cdc-1 {
+    margin-bottom: 4rem;
+}
+
+#cdc-2 {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#cdc-3 {
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+}
+
+.user-indent {
+    display: flex;
+    flex-direction: row;   
+    align-items: center;
+}
+
+.user-indent span {
+    margin-left: 2.5rem; 
+    color: var(--sp-color);
+    
+}
+
+.user-indent span h3 {
+    font-weight: 500 ;
+    color: var(--white-color);
+}
+ 
+.photo-user {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.card-comments p {
+    margin-top: 2.5rem;
+}
+
+
+/* FOOTER ========================*/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+/* Responsive ======== */
+@media (max-width: 375px) {
+    body {
+        background-image: url("./images/bg-pattern-top-mobile.svg");
+        font-size: 13px;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        margin: 3.5rem;
+    }
+
+    #box-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card-copy {
+        max-width: 100%;
+        padding-right: 0rem;
+    }
+
+    .card-copy h1 {
+        text-align: center;
+    }
+
+    .card-copy p {
+        text-align: center;
+    }
+
+    .card-rateds {
+        max-width: 100%;
+    }
+
+    .rateds {
+        width: 100%;
+        padding-left: 0.5rem;
+    }
+
+    #rtd-1 {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+
+    #rtd-2 {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+
+    #rtd-3 {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+
+    #box-2 {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    #cdc-1 {
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+
+    #cdc-2 {
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+
+    #cdc-3 {
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .photo-user {
+        width: 60px;
+        height: 60px;
+    }
+
+    .user-indent span {
+        margin-left: 1rem; 
+    }
+}
