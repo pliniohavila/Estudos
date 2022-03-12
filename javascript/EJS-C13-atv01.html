@@ -1,0 +1,35 @@
+<h1>Cabeçalho com um elemento <span>spans</span></h1> 
+<p>Um parágrafo com<span>span</span>e dois <span>span</span></p>
+
+
+<script>
+function byTagName(node, tagName) {
+    var elementsHtml = [];
+    // Function aux to recursive call 
+    getDescendants(node, tagName);
+
+    function getDescendants(node, tagName) {
+        let bodyNodes = node.childNodes;
+        for (let i = 0; i < bodyNodes.length; i++) {
+          // Conditional to treat only node that we html tags
+          if (bodyNodes[i].nodeName != "#text") {
+            let child = bodyNodes[i];
+
+            // Conditional to increment return's array 
+            if (child.tagName.toLowerCase() == tagName){
+              elementsHtml.push(child);
+            }
+            getDescendants(child, tagName);
+          }
+        }
+    }
+    return elementsHtml;
+}
+
+// Tests
+console.log(byTagName(document.body, "h1").length);
+console.log(byTagName(document.body, "span").length);
+var para = document.querySelector("p");
+console.log(byTagName(para, "span").length);  
+
+</script>
