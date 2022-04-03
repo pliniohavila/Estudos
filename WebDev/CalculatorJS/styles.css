@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); 
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #eae3e3;
+	
+}
+
+h1 {
+	font-size: 20px;
+}
+
+.calculator {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: auto;
+
+	border: 1px solid;
+
+	width: 25vw;
+	
+}
+
+#displays {
+	width: 100%;
+    opacity: 70%;
+}
+
+
+#acumulator {
+	height: 4rem;
+	border-bottom: 2px solid;
+	background-color: white;
+
+	text-align: end;
+	font-size: 1.5rem;
+    padding: 1rem 0.5rem 0 0;
+	opacity: 80%;
+}
+
+#display {
+	height: 5rem;
+	border-bottom: 1px solid;
+	background-color: white;
+
+	text-align: end;
+	font-size: 1.8rem;
+    padding: 1.2rem 0.5rem 0 0;
+	font-weight: 600;
+}
+
+footer {
+	text-align: center;
+}
+
+.keys {
+	display: grid;
+	grid-template-columns: 50% 50% 50% 50%;
+	grid-gap: 0.2rem;
+    position: relative;
+    right: 5rem;
+}
+
+.key {
+	background-color: #eee;
+	font-size: 2rem;
+	text-align: center;
+
+    padding: 0.3rem .5rem .3rem .5rem;
+    border-radius: 10%;
+}
+
+.key:hover {
+	background-color: rgb(211, 211, 211);
+	cursor: pointer;
+}
+
+.key:active {
+	background-color: #7c7c7c;
+}
+
+#equal {
+	grid-column-start: 1;
+    grid-column-end: 5;
+
+}
